@@ -10,7 +10,7 @@
       <h2>Books</h2>
       <%= render 'books/index',books: @books %>
 
-      <p><%= link_to "#{book.post_comments.count} コメント", book_path(book.id) %></p>
+      <p><%= link_to "#{@book.post_comments.count} コメント", book_path(@book.id) %></p>
     </div>
   </div>
 </div>
